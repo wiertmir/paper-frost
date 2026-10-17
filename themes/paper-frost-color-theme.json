@@ -73,7 +73,18 @@
     "textLink.activeForeground": "#2563eb",
     "textCodeBlock.background": "#eef2f6",
     "textPreformat.foreground": "#c2410c",
+    "textPreformat.background": "#e5e9ef",
+    "keybindingLabel.background": "#f1f5f9",
+    "keybindingLabel.foreground": "#263238",
+    "keybindingLabel.border": "#cbd5e1",
+    "keybindingLabel.bottomBorder": "#94a3b8",
     "textBlockQuote.border": "#15803d",
+    "textBlockQuote.background": "#f1f5f9",
+    "editor.findMatchHighlightBackground": "#bae6fd80",
+    "scrollbarSlider.background": "#64748b33",
+    "scrollbarSlider.hoverBackground": "#64748b55",
+    "scrollbarSlider.activeBackground": "#64748b77",
+    "widget.shadow": "#0f172a1f",
     "terminal.background": "#fafaf7",
     "terminal.foreground": "#263238",
     "terminal.ansiBlack": "#f1f5f9",
@@ -98,6 +109,11 @@
     "gitDecoration.ignoredResourceForeground": "#64748b",
     "notebook.cellEditorBackground": "#eef2f6",
     "notebook.cellBorderColor": "#e2e8f0",
+    "themedMarkdown.tableBorder": "#64748b59",
+    "themedMarkdown.tableHeaderBackground": "#64748b14",
+    "themedMarkdown.tableHeaderForeground": "#0369a1",
+    "themedMarkdown.tableStripeBackground": "#0f172a08",
+    "themedMarkdown.tableInnerBorder": "#64748b26",
     "themedMarkdown.markBackground": "#fdf3a7"
   },
   "tokenColors": [
@@ -327,7 +343,7 @@
     {
       "scope": "punctuation.definition.list.begin.markdown",
       "settings": {
-        "foreground": "#b45309",
+        "foreground": "#7B3F00",
         "fontStyle": "bold"
       }
     },
