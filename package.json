@@ -4,6 +4,7 @@
   "description": "Warm paper-white background with ink-dark text and crisp teal, blue and violet accents.",
   "version": "0.1.7",
   "publisher": "wiertmir",
+  "icon": "images/icon.png",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   ],
   "files": [
     "themes",
+    "images",
     "LICENSE",
     "README.md"
   ],
