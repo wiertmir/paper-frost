@@ -5,6 +5,8 @@ Warm paper-white background with ink-dark text and crisp teal, blue and violet a
 Markdown gets its own colours while editing: each heading level, bold, italic, inline code, links, list bullets and quotes.
 With the themed-markdown-notebook-render extension the same colours show in notebook Markdown cells.
 
+Python and Rust get extra colours from semantic highlighting (Pylance, rust-analyzer): classes vs. other types, docstrings, f-strings and raw strings, `self`/`cls`, decorators and attributes, traits, macros, and bold methods that consume `self`. Log files have coloured errors, warnings and stack traces. Notebooks show white cells on a grey-blue page.
+
 ## Install
 
 ```sh
