@@ -12,6 +12,7 @@
     "selection.background": "#bae6fd",
     "editor.background": "#fafaf7",
     "editor.foreground": "#263238",
+    "editorInlayHint.background": "#0369a10a",
     "editor.lineHighlightBackground": "#eef2f6",
     "editor.selectionBackground": "#bae6fd",
     "editor.inactiveSelectionBackground": "#eef2f6",
@@ -284,7 +285,7 @@
     {
       "scope": "heading.4.markdown",
       "settings": {
-        "foreground": "#4f46e5",
+        "foreground": "#3b00db",
         "fontStyle": "bold"
       }
     },
@@ -431,7 +432,7 @@
         "entity.name.class"
       ],
       "settings": {
-        "foreground": "#0e7490"
+        "foreground": "#007fff"
       }
     },
     {
@@ -480,7 +481,7 @@
         "meta.fstring.python punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "#14532d"
+        "foreground": "#5f8a00"
       }
     },
     {
@@ -602,7 +603,10 @@
     "parameter.keywordArgument": "#8b6a3e",
     "enumMember": "#c2410c",
     "enumMember.declaration": "#c2410c",
-    "namespace": "#66704f",
+    "namespace": {
+      "foreground": "#66704f",
+      "italic": true
+    },
     "macro": "#7a645c",
     "macro.defaultLibrary": "#7a645c",
     "const": "#b45309",
