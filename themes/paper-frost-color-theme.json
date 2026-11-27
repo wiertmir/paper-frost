@@ -602,12 +602,169 @@
       }
     },
     {
-      "name": "YAML key",
-      "scope": "entity.name.tag.yaml",
-      "settings": {
-        "foreground": "#1e3f7a",
-        "fontStyle": ""
-      }
+        "name": "Key - depth 0",
+        "scope": [
+            "source.json support.type.property-name.json",
+            "source.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#1f305e",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 1",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#0070bb",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 2",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#1c39bb",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 3",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#26619c",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 4",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#3457d5",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 5",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#1f305e",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 6",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#0070bb",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 7",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#1c39bb",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 8",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#26619c",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 9",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#3457d5",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 10",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#1f305e",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 11",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#0070bb",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 12",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#1c39bb",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 13",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#26619c",
+            "fontStyle": ""
+        }
+    },
+    {
+        "name": "Key - depth 14 (and deeper)",
+        "scope": [
+            "source.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json meta.structure.dictionary.value.json support.type.property-name.json",
+            "source.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml meta.map.value.yaml entity.name.tag.yaml"
+        ],
+        "settings": {
+            "foreground": "#3457d5",
+            "fontStyle": ""
+        }
     },
     {
       "name": "YAML punctuation",
@@ -691,22 +848,6 @@
       ],
       "settings": {
         "foreground": "#c2410c"
-      }
-    },
-    {
-      "name": "JSON key - top level",
-      "scope": "source.json meta.structure.dictionary.json support.type.property-name.json",
-      "settings": {
-        "foreground": "#115e59",
-        "fontStyle": ""
-      }
-    },
-    {
-      "name": "JSON key - nested",
-      "scope": "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json support.type.property-name.json",
-      "settings": {
-        "foreground": "#1e3f7a",
-        "fontStyle": ""
       }
     },
     {
