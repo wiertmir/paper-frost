@@ -148,6 +148,16 @@
       }
     },
     {
+      "name": "Comment delimiters",
+      "scope": [
+        "comment punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#64748b",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "scope": [
         "keyword",
         "storage.type",
@@ -441,12 +451,14 @@
         "comment.block.documentation",
         "comment.line.documentation",
         "comment.block.documentation punctuation",
+        "comment.block.documentation punctuation.definition.comment",
+        "comment.line.documentation punctuation.definition.comment",
         "string.quoted.docstring",
         "string.quoted.docstring.multi.python punctuation.definition.string.begin",
         "string.quoted.docstring.multi.python punctuation.definition.string.end"
       ],
       "settings": {
-        "foreground": "#5a7a6b",
+        "foreground": "#8db600",
         "fontStyle": "italic"
       }
     },
@@ -457,7 +469,7 @@
       ],
       "settings": {
         "foreground": "#a16207",
-        "fontStyle": "bold"
+        "fontStyle": "bold italic"
       }
     },
     {
@@ -810,17 +822,6 @@
       }
     },
     {
-      "name": "Comment delimiters",
-      "scope": [
-        "comment.block.xml punctuation.definition.comment",
-        "comment.line.number-sign.yaml punctuation.definition.comment"
-      ],
-      "settings": {
-        "foreground": "#64748b",
-        "fontStyle": "italic"
-      }
-    },
-    {
       "name": "XML CDATA",
       "scope": [
         "string.unquoted.cdata.xml"
@@ -921,7 +922,7 @@
     "property": "#1e3f7a",
     "property.declaration": "#115e59",
     "comment.documentation": {
-      "foreground": "#5a7a6b",
+      "foreground": "#8db600",
       "italic": true
     },
     "builtinAttribute": {
