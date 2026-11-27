@@ -3,7 +3,7 @@
 const fs = require("fs"), assert = require("assert");
 const NM = process.env.VSC_NM, SYN = "/usr/share/code/resources/app/extensions/";
 const tm = require(NM + "/vscode-textmate"), onig = require(NM + "/vscode-oniguruma");
-const pkg = JSON.parse(fs.readFileSync(__dirname + "/package.json", "utf8")).contributes.grammars[0];
+const contributes = JSON.parse(fs.readFileSync(__dirname + "/package.json", "utf8")).contributes, pkg = contributes.grammars[0];
 
 const files = {};  // scopeName -> grammar file, for every built-in grammar
 for (const ext of fs.readdirSync(SYN)) {
@@ -49,7 +49,7 @@ files[pkg.scopeName] = __dirname + "/" + pkg.path;
     else assert.strictEqual(got, want, `${root} ${line}: ${text}`);
   }
   // every Jinja scope the grammar emits (comments aside) gets the theme's Jinja colour
-  const theme = JSON.parse(fs.readFileSync(__dirname + "/themes/paper-frost-color-theme.json", "utf8").replace(/,(\s*[}\]])/g, "$1"));
+  const theme = JSON.parse(fs.readFileSync(__dirname + "/" + contributes.themes[0].path, "utf8").replace(/,(\s*[}\]])/g, "$1"));
   const jr = theme.tokenColors.filter(r => r.name?.startsWith("Jinja"));
   assert(jr.every(r => r.settings.fontStyle === "italic"), "every Jinja rule is italic");
   const colored = new Set(jr.flatMap(r => r.scope));

@@ -613,6 +613,8 @@
       "name": "YAML punctuation",
       "scope": [
         "punctuation.separator.key-value.mapping.yaml",
+        "punctuation.separator.map.value.yaml",
+        "keyword.control.flow.block-scalar",
         "punctuation.definition.mapping.begin.yaml",
         "punctuation.definition.mapping.end.yaml",
         "punctuation.definition.sequence.begin.yaml",
@@ -655,7 +657,10 @@
     },
     {
       "name": "YAML number",
-      "scope": "constant.numeric.yaml",
+      "scope": [
+        "constant.numeric.yaml",
+        "source.yaml constant.numeric"
+      ],
       "settings": {
         "foreground": "#be185d"
       }
@@ -674,6 +679,10 @@
       "name": "YAML anchor / alias / tag",
       "scope": [
         "entity.name.type.anchor.yaml",
+        "variable.other.anchor.yaml",
+        "storage.type.tag.shorthand.yaml",
+        "punctuation.definition.tag.primary.yaml",
+        "punctuation.definition.tag.secondary.yaml",
         "variable.other.alias.yaml",
         "keyword.control.flow.alias.yaml",
         "punctuation.definition.anchor.yaml",
