@@ -7,6 +7,8 @@ With the themed-markdown-notebook-render extension the same colours show in note
 
 Python and Rust get extra colours from semantic highlighting (Pylance, rust-analyzer): classes vs. other types, docstrings, f-strings and raw strings, `self`/`cls`, decorators and attributes, traits, macros, and bold methods that consume `self`. Log files have coloured errors, warnings and stack traces. Notebooks show white cells on a grey-blue page.
 
+JSON, YAML and XML have muted punctuation, so keys, values and tags stand out. Jinja templates (`{{ }}`, `{% %}`, `{# #}`) are highlighted inside YAML, HTML, XML, JSON and Python strings, with no extra extension. f-strings are left alone, since `{{` there is an escaped brace. Only single-line tags are recognised.
+
 ## Install
 
 ```sh

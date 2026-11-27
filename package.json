@@ -2,7 +2,7 @@
   "name": "paper-frost-theme",
   "displayName": "Paper Frost",
   "description": "Warm paper-white background with ink-dark text and crisp teal, blue and violet accents.",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "publisher": "wiertmir",
   "icon": "images/icon.png",
   "license": "MIT",
@@ -24,6 +24,7 @@
   ],
   "files": [
     "themes",
+    "syntaxes",
     "images",
     "LICENSE",
     "README.md"
@@ -34,6 +35,13 @@
         "label": "Paper Frost",
         "uiTheme": "vs",
         "path": "./themes/paper-frost-color-theme.json"
+      }
+    ],
+    "grammars": [
+      {
+        "scopeName": "jinja.injection",
+        "path": "./syntaxes/jinja.injection.tmLanguage.json",
+        "injectTo": ["source.python", "source.yaml", "text.html.basic", "text.html.derivative", "text.xml", "source.json", "source.json.comments"]
       }
     ]
   },

@@ -1,0 +1,56 @@
+{
+  "$comment": "Jinja {{ }}, {% %} and {# #} inside YAML, HTML, XML, JSON and Python strings (f-strings carry no string.quoted scope around {{, so they stay out). Single-line tags only.",
+  "scopeName": "jinja.injection",
+  "injectionSelector": "L:source.python string.quoted -meta.embedded.inline.jinja, L:source.yaml -comment -meta.embedded.inline.jinja, L:text.html -comment -meta.embedded.inline.jinja, L:text.xml -comment -meta.embedded.inline.jinja, L:source.json -comment -meta.embedded.inline.jinja",
+  "patterns": [
+    { "include": "#comment" },
+    { "include": "#statement" },
+    { "include": "#expression" }
+  ],
+  "repository": {
+    "comment": {
+      "match": "\\{#.*?#\\}",
+      "name": "meta.embedded.inline.jinja comment.block.jinja"
+    },
+    "statement": {
+      "match": "(\\{%[-+]?)\\s*([A-Za-z_]\\w*)?(.*?)\\s*([-+]?%\\})",
+      "name": "meta.embedded.inline.jinja",
+      "captures": {
+        "1": { "name": "punctuation.definition.tag.begin.jinja" },
+        "2": { "name": "keyword.control.jinja" },
+        "3": { "patterns": [{ "include": "#expr" }] },
+        "4": { "name": "punctuation.definition.tag.end.jinja" }
+      }
+    },
+    "expression": {
+      "match": "(\\{\\{[-+]?)(.*?)([-+]?\\}\\})",
+      "name": "meta.embedded.inline.jinja",
+      "captures": {
+        "1": { "name": "punctuation.definition.tag.begin.jinja" },
+        "2": { "patterns": [{ "include": "#expr" }] },
+        "3": { "name": "punctuation.definition.tag.end.jinja" }
+      }
+    },
+    "expr": {
+      "patterns": [
+        { "match": "\"(?:[^\"\\\\]|\\\\.)*\"", "name": "string.quoted.double.jinja" },
+        { "match": "'(?:[^'\\\\]|\\\\.)*'", "name": "string.quoted.single.jinja" },
+        { "match": "\\b\\d+(?:\\.\\d+)?\\b", "name": "constant.numeric.jinja" },
+        { "match": "\\b(?:true|false|none|True|False|None)\\b", "name": "constant.language.jinja" },
+        {
+          "match": "(\\|)\\s*([A-Za-z_]\\w*)",
+          "captures": {
+            "1": { "name": "punctuation.separator.filter.jinja" },
+            "2": { "name": "support.function.filter.jinja" }
+          }
+        },
+        { "match": "\\b(?:and|or|not|in|is|if|else|elif|recursive|with|without|context|ignore|missing|as|import|from)\\b", "name": "keyword.other.jinja" },
+        { "match": "[A-Za-z_]\\w*(?=\\s*\\()", "name": "entity.name.function.jinja" },
+        { "match": "[A-Za-z_]\\w*", "name": "variable.other.jinja" },
+        { "match": "\\.", "name": "punctuation.accessor.jinja" },
+        { "match": "[-+*/%=<>!~]+", "name": "keyword.operator.jinja" },
+        { "match": "[()\\[\\]{},:]", "name": "punctuation.jinja" }
+      ]
+    }
+  }
+}
